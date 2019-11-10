@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Javascript Exercises</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" integrity="sha256-77qGXu2p8NpfcBpTjw4jsMeQnz0vyh74f5do0cWjQ/Q=" crossorigin="anonymous" />
+
+    <style type="text/css" media="screen">
+      .string { color: green!important; }
+    </style>
+  </head>
+  <body class="container-fluid">
+    <header>
+      <h1>Javascript Exercises</h1>
+    </header>
+    <main>
+      <article>
+        <h2>Functions</h2>
+        <ol>
+          <li>
+            <p>
+              Write a function <code>eleven</code> that returns 11.
+            </p>
+            <dl>
+              <dt>Output:</dt> <dd><pre> <code class="language-js">eleven() // 11</code></pre></dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>
+              Write a function <code>twenty</code> that outputs 20.
+            </p>
+            <dl>
+              <dt>Output:</dt> <dd><pre> <code class="language-js">twenty() // 20</code></pre></dd>
+            </dl>
+
+            <hr />
+          </li>
+
+          <li>
+            <p>
+              Write a function <code>aString</code> that returns <code class="string">"this is a string"</code>
+            </p>
+            <dl>
+              <dt>Output:</dt> <dd><pre> <code class="language-js">aString() // "this is a string"</code></pre></dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>
+              Write a function <code>anArray</code> that outputs the following array: <code>[2, 4, 6, 1]</code>
+            </p>
+            <dl>
+              <dt>Output:</dt> <dd><pre><code class="language-js">anArray() // [2, 4, 6, 1]</code></pre></dd>
+            </dl>
+            <hr />
+          </li>
+          <li>
+            <p> Write a function <code>identity</code> that receives a value as input and returns it.</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    identity(7)       // 7
+                    identity("test")  // "test"
+                    identity([1,2,3]) // [1,2,3]
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>plusTwo</code> that receives a value as input and outputs the value + 2.</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    plusTwo(7)       // 9
+                    plusTwo(0)       // 2
+                    plusTwo(-3)      // -1
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>square</code> that receives a number <code>n</code> and returns its square (n<sup>2</sup>)</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    square(7)       // 49
+                    square(-3)      // 9
+                    square(10)      // 100
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>greaterThanTen</code> that receives a number and returns true if the number is greater than 10</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    greaterThanTen(5)       // false
+                    greaterThanTen(10)      // false
+                    greaterThanTen(11)      // true
+                    greaterThanTen(15)      // true
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Rewrite the function <code>greaterThen</code> without any <code>if</code> statement
+              <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>greaterThan</code> that receives a two arguments and returns true if the first argument is greater than the second</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    greaterThan(5, 7)       // false
+                    greaterThan(9, 9)       // false
+                    greaterThan(11, 3)      // true
+                    greaterThan(15, -3)     // true
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Rewrite the function <code>greaterThanTen</code> using the function <code>greaterThan</code></p>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>greatestOfTwo</code> that accepts two arguments and returns the greatest of the two</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    greatestOfTwo(5, 7)     // 7
+                    greatestOfTwo(9, 9)     // 9
+                    greatestOfTwo(11, 3)    // 11
+                    greatestOfTwo(15, -3)   // 15
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>Write a function <code>greatestOfFour</code> that receives a three arguments and returns the greatest of the three</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    greatestOfFour(5, 7, 9, 1)       // 9
+                    greatestOfFour(-7, -6, -5, -3)   // -3
+                    greatestOfFour(11, 11, 10, 10)   // 11
+                    greatestOfFour(-1, 0, -3, -99)   // 0
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>Rewrite the <code>greatestOfFour</code> function using the <code>greatestOfTwo</code> function</p>
+          </li>
+
+          <li>
+            <p>Write a function <code>countdown</code> that receives a number
+              <code>n</code>. If n &lt;= 0, it should return the string <code class="string">"BOOM!"</code>.
+              Otherwise, it should print the number and return <code>countdown(n-1)</code></p>
+
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    countdown(3)       // prints 3 2 1, returns "BOOM!"
+                    countdown(7)       // prints 7 6 5 4 3 2 1, returns "BOOM!"
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>Write a function <code>sum</code> that receives a number <code>n</code> and returns the sum of the first <code>n</code> numbers</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    sum(3)       // 6
+                    sum(7)       // 28
+                    sum(10)      // 55
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>Write a function <code>factorial</code> that receives a number <code>n</code> and returns <code>n!</code>. Remember: 0! == 1</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    factorial(0)    // 1
+                    factorial(3)    // 6
+                    factorial(7)    // 5040
+                    factorial(10)   // 3628800
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p>Write a function <code>factorialRecursive</code> that receives a
+              number <code>n</code> and returns <code>n!</code> <strong>without
+                using any <code>for</code> statements</strong></p> </li>
+
+          <li>
+            <p>Write a function <code>newArray</code> that receives a number <code>n</code> and returns an array with <code>n</code> zeros</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    newArray(0)    // []
+                    newArray(3)    // [0, 0, 0]
+                    newArray(7)    // [0, 0, 0, 0, 0, 0, 0]
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>buildArray</code> that receives a number <code>n</code> and returns an array containing the first <code>n</code> numbers</p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    buildArray(0)      // []
+                    buildArray(1)      // [0]
+                    buildArray(5)      // [0, 1, 2, 3, 4]
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>addToArray</code> that receives an array <code>arr</code> and a number <code>n</code> and returns a new array with <code>n</code> appended to <code>arr</code></p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    addToArray([1,2,3], 4)          // [1, 2, 3, 4]
+                    addToArray([], 8)               // [8]
+                    addToArray([5, 9, 72], "str")   // [5, 9, 72, "str"]
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+          <li>
+            <p> Write a function <code>contains</code> that receives an array <code>arr</code> and a number <code>n</code> and returns a true if <code>n</code> is in the array <code>arr</code></p>
+            <dl>
+              <dt>Examples</dt>
+              <dd>
+              <pre class="language-js">
+                  <code>
+                    contains([1,2,3], 2)          // true
+                    contains([5, 9, 72], 5)       // true
+                    contains([], 8)               // false
+                    contains([8, 8, 8, 8], 7)     // false
+                  </code>
+              </pre>
+              </dd>
+            </dl>
+            <hr />
+          </li>
+
+        </ol>
+      </article>
+    </main>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js" integrity="sha256-HWJnMZHGx7U1jmNfxe4yaQedmpo/mtxWSIXvcJkLIf4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" integrity="sha256-abVQckxqXkWO8NiZk8TBPHzv3/LObzIqzzQWz0kV0F0=" crossorigin="anonymous"></script>
+  </body>
+</html>
+
